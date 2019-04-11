@@ -1,0 +1,29 @@
+MATRIX ---------------------------------------------------------
+The matrix class creates a 4x4 matrix.
+
+The class can take several arguments: 
+'preset' (matrix type; mandatory)
+’scale’: the scale factor, mandatory when ’preset’ is worth SCALE.
+’angle’: the rotation angle in radians, mandatory when ’preset’
+is worth RX, RY or RZ.
+’vtc’: translation vector, mandatory when ’preset’ is worth 
+TRANSLATION.
+’fov’: projection field of view in degrees mandatory when
+’preset’ is worth PROJECTION.
+’ratio’: projected image ratio, mandatory when ’preset’ 
+is worth PROJECTION.
+’near’: projection’s near clipping plane mandatory when ’preset’ 
+is worth PROJECTION.
+’far’: projection’s far clipping plane mandatory when ’preset’ 
+is worth PROJECTION.
+
+The class has constants IDENTITY, SCALE, RX, RY, RZ,
+TRANSLATION and PROJECTION. 
+
+The methods are:
+
+Matrix mult(Matrix $rhs): returns the multiplication of both matrices
+Vertex transformVertex(Vertex $vtx): returns a new vertex resulting from
+the transformation of the vertex by the matrix.
+
+---------------------------------------------------------MATRIX

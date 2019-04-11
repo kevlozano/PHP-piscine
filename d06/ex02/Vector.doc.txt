@@ -1,0 +1,45 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class the placement of points in space and even give
+them a simple color. It uses orientation of right hand.
+
+An instance can be constructed using the class of Vertex and Color.
+
+The attributes needed are x, y, z and (optionally) w (set at 0 by default). Also,
+by using the 'orig' (optional) key you can determine the origin of the vector, 
+which is set at 0,0,0 by default.
+
+The attributes are private but can be seen by using the method getX(), getY(), getZ()
+getW().
+
+The class provides the following methods :
+
+Vector  magnitude();
+Returns the magnitude of the new instance of Vector
+
+Vector  normalize();
+Returns ta new instance of Vector with a Vertex classed of normalized magnitude
+
+Vector  add($rhs);
+Returns the addition of the new instance of Vector and Vector rhs
+
+Vector  sub($rhs);
+Returns the substraction of the new instance of Vector and Vector rhs
+
+Vector  dotProduct($rhs);
+Returns the dot product of the new instance of Vector and Vector rhs
+
+Vector  opposite();
+Returns the opposite of the new instance of Vector
+
+Vector  scalarProduct($k);
+Returns the scalar product of the new instance of Vector and scalar k
+
+Vector  add($rhs);
+Returns the addition of the new instance of Vector and Vector rhs
+
+Vector cos($rhs);
+Returns the angle’s cosine between both vectors.
+
+Vector crossProduct($rhs);
+Returns the cross multiplication of both vectors
+---------------------------------------------------------------------- Vector ->

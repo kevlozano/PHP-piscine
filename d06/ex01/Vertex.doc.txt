@@ -1,0 +1,15 @@
+<- Vertex ----------------------------------------------------------------------
+The Color class handles x, w, z and w coordinates and color (represented by
+an instance of Color Class).
+
+An instance can be contructed from x, y, z values.
+
+Optionally, w can be included, if not the default value for it is 1.00.
+
+All the attributes are set to private, although they can be accessed and set by
+the use of get() and set(), respectively.
+
+ex. getX() -> gives you the x attribute, setY($y) -> sets the y attribute.
+
+The class provides no methods
+---------------------------------------------------------------------- Vertex ->
