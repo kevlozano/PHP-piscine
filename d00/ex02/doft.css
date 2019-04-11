@@ -1,0 +1,125 @@
+body {
+    background-color: #505050;
+}
+#first {
+    position: absolute;
+    width: 62%;
+    padding-bottom: 10px;
+    left: 380px;
+}
+#header {
+    padding-top: .5%;
+    padding-left: .2%;
+    width: 80%;
+    height: 100%;
+}
+#dayof42 {
+    width: 30%;
+    float: left;
+}
+.x {
+    float: right;
+    clear: left;
+}
+#rel {
+    width: 1.5%;
+    float: right;
+}
+
+#middle {
+    width: auto;
+    position: absolute;
+    left: 670px;
+    top: 165px;
+}
+#center-box {
+    display: inline-block;
+    height: 50%;
+    margin: .5%;
+}
+.side-images {
+    width: 35%;
+    padding: 0%;
+}
+#left-box {
+    position: absolute;
+    width: 170px;
+    left: 475px;
+    top: 165px;
+}
+.container {
+    text-align: center;
+    background-color: rgb(144, 144, 144);
+    box-shadow: 10px 10px 5px black;
+    border-radius: 10px;
+    border-color: black;
+    border: 1px solid;  
+}
+
+#cluster {
+    width: 100%;
+    z-index: 2;
+    height: 100%;   
+}
+
+#right-box {
+    position: absolute;
+    width: 170px;
+    right: 670px;
+    top: 165px;
+    height: 405px;
+}
+.brick-top {
+    width: 25%;
+    float: left;
+}
+.brick-bottom {
+    width: 25%;
+    float: left;
+}
+#brick-2 {
+    clear: both;
+}
+#bricks {
+    margin-left: 20%;
+}
+#redbox {
+    position: absolute;
+    left: 527px;
+    top: 338px;
+    width: 60px;
+    height: 60px;
+    border: 3px solid red;
+}
+#green-box {
+    position: absolute;
+    left: 400px;
+    top: 680px;
+    width: 450px;
+    height: 200px;
+    border: 3px solid #88ff89;
+    border-radius: 10px;
+    background-color: #88ff89;
+}
+#loupe {
+    width: 250px;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+#ikea-box {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    left: 1000px;
+    top: 490px;
+    z-index: 1;
+}
+#apple-box {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    left: 1470px;
+    top: 490px;
+    z-index: 1;
+}

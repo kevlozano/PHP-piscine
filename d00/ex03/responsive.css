@@ -1,0 +1,74 @@
+body {
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/HPWsSXb4xiwrj8lkx/videoblocks-glowing-stars-in-space-background_szjieseax_thumbnail-full13.png");
+}
+
+.mass {
+    text-align: right;
+    font-size: 1vw;
+    margin: .2vw;
+}
+.num {
+    text-align: left;
+    font-size: 1vw;
+    margin: .2vw;
+}
+table {
+    width: 100%;
+}
+h2 {
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+}
+td.diatomic{
+background-color:green;
+}
+
+td.noble-gas{
+background-color: lightblue;
+}
+
+td.alkali-metal{
+background-color: orangered;
+}
+
+td.alkaline-earth{
+background-color: orange;
+}
+
+td.metalloid{
+background-color: burlywood;
+}
+
+td.polyatomic{
+background-color: greenyellow;
+}
+
+td.transition{
+background-color: salmon;
+}
+
+td.post-transition{
+background-color: grey;
+}
+
+td.lanthanide{
+background-color: lightcoral;
+}
+
+td.actinide{
+background-color: purple;
+}
+td.unknown{
+background-color: cadetblue;
+}
+h1 {
+color: whitesmoke;
+text-align: center;
+}
+#scientist {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+}
