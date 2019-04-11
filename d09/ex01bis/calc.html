@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title>Calc</title>
+    <style>
+    </style>
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+    <script>
+    var leftSide;
+    var rightSide;
+    var op;
+    var result;
+    var r;
+    $(document).ready(function () {
+            setInterval("alert('Please, use me...')", 30000)
+        })
+    function validateForm() {
+        leftSide = $('#left-number').val();
+        rightSide = $('#right-number').val();
+        op = $('#op').val();
+        //alert("allgood");
+       if (leftSide < 0 || rightSide < 0) {
+            alert("Error :(");
+            return false;
+        }
+        if (op == "division" || op == "mod") {
+            if (rightSide == 0) {
+                console.log("It's over 9000!");
+                alert("It's over 9000!");
+                return true;
+            }
+        }
+        //alert("allgood");
+        // 
+        r = calculate(op, leftSide, rightSide);
+        //document.getElementById("result").setAttribute("value", result);
+        result = $('#result').val(r);
+        
+        return false;
+    }
+    function calculate(op, leftSide, rightSide) {
+      switch (op) {
+          
+            case "plus":
+                r = Number(leftSide) + Number(rightSide);
+                break;
+            case "minus":
+                r = Number(leftSide) - Number(rightSide);
+                break;
+            case "mult":
+                r = Number(leftSide) * Number(rightSide);
+                break;
+            case "division":
+                r = Number(leftSide) / Number(rightSide);
+                break;
+            case "mod":
+                r = Number(leftSide) % Number(rightSide);
+                break; 
+        }
+        return (r);
+    }
+    </script>
+</head>
+<body>
+    <form class="left-input" id="left-div" onsubmit="return validateForm()">
+    <input type="text" id="left-number" placeholder="left-side of opertaion">
+    <select id="op">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="mult">*</option>
+            <option value="division">/</option>
+            <option value="mod">%</option>
+    </select>
+    <input type="text" id="right-number" placeholder="right-side of opertaion">
+    <input type="text" id="result" placeholder="result">
+</br>
+    <input type="submit" value="Try me!" id="submit-btn">   
+    </div>
+</body>
+</html>

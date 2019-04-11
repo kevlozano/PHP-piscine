@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Calc</title>
+    <style>
+    </style>
+    <script>
+    var leftSide;
+    var rightSide;
+    var op;
+    var result;
+    window.onload = function () {
+            setInterval("alert('Please, use me...')", 30000)
+        }
+    function validateForm() {
+        leftSide = document.getElementById("left-number").value;
+        rightSide = document.getElementById("right-number").value;
+        op = document.getElementById("op").value;
+        //alert("allgood");
+       if (leftSide < 0 || rightSide < 0) {
+            alert("Error :(");
+            return false;
+        }
+        if (op == "division" || op == "mod") {
+            if (rightSide == 0) {
+                console.log("It's over 9000!");
+                alert("It's over 9000!");
+                return true;
+            }
+        }
+        //alert("allgood");
+        // 
+        result = calculate(op, leftSide, rightSide);
+        document.getElementById("result").setAttribute("value", result);
+        return false;
+    }
+    function calculate(op, leftSide, rightSide) {
+      switch (op) {
+            case "plus":
+                result = Number(leftSide) + Number(rightSide);
+                break;
+            case "minus":
+                result = Number(leftSide) - Number(rightSide);
+                break;
+            case "mult":
+                result = Number(leftSide) * Number(rightSide);
+                break;
+            case "division":
+                result = Number(leftSide) / Number(rightSide);
+                break;
+            case "mod":
+                result = Number(leftSide) % Number(rightSide);
+                break; 
+        }
+        return (result);
+    }
+    </script>
+</head>
+<body>
+    <form class="left-input" id="left-div" onsubmit="return validateForm()">
+    <input type="text" id="left-number" placeholder="left-side of opertaion">
+    <select id="op">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="mult">*</option>
+            <option value="division">/</option>
+            <option value="mod">%</option>
+    </select>
+    <input type="text" id="right-number" placeholder="right-side of opertaion">
+    <input type="text" id="result" placeholder="result">
+</br>
+    <input type="submit" value="Try me!" id="submit-btn">   
+    </div>
+</body>
+</html>
